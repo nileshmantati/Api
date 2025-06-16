@@ -2,6 +2,7 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Header from './Header';
 import Products from './Products';
+import Productdetails from './Productdetails';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/category/:name" element={<Products />} />
+          <Route path="/products/:id" element={<Productdetails />} />
         </Routes>
       </header>
     </div >
